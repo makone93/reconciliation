@@ -22,32 +22,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
 Route::post('/get_user', [UserController::class, 'user_login']);
 Route::post('/reconcile-documents', [ReconcileController::class, 'reconcileDocuments']);
 Route::post('/unmatched-entries', [ReconcileController::class, 'unmatchedEntries']);
-// Route::get('/getBookingsPage', [BookingsController::class, 'paginatedResult']);
-// Route::post('/vehicle-movememt-logs', [VehicleMovementLogsController::class, 'totalRecords']);
-// Route::get('/peek-vehicle-movement', [VehicleMovementLogsController::class, 'totalRecords']);
-// Route::post('/get-vehicle', [VehicleController::class, 'getVehicle']);
-// Route::post('/get-driver', [DriverController::class, 'getDriver']);
-// Route::get('/all-sites', [SitesController::class, 'allSites']);
-// Route::put('/vehicle-movement-log/:movement_id', [VehicleMovementLogsController::class, 'update']);
-
-// Route::post('/import-drivers', [DriverController::class, 'import']);
-// Route::post('/import-vehicles', [VehicleController::class, 'import']);
-// Route::post('/import-keys', [KeyController::class, 'import']);
-
-
-// Route::resources(
-//     [
-//         'sites' => SitesController::class,
-//         'departments' => DepartmentsController::class,
-//         'vehicle' => VehicleController::class,
-//         'driver' => DriverController::class,
-//         'vehicle-movement-log' => VehicleMovementLogsController::class,
-//     ],
-// );
